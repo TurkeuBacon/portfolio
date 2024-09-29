@@ -1,10 +1,14 @@
 import React from 'react';
-import './style/App.css';
-import TopBar from './components/TopBar'
+import './App.css';
+import TopBar from './components/TopBar/TopBar'
+import SideNav from './components/SideNav/SideNav'
 
 function App() {
   return (
-    <TopBar></TopBar>
+    <div className='App'>
+      <TopBar></TopBar>
+      <SideNav></SideNav>
+    </div>
   );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import '../style/TopBar.css'
+import './TopBar.css'
 
 class TopBar extends React.Component{
     render(): React.ReactNode {
