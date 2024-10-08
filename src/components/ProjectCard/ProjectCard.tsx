@@ -31,7 +31,7 @@ class ProjectCard extends React.Component {
                 <hr/>
                 <div className='ProjectCard-content-duo'>
                     <div className='ProjectCard-image-wrapper'>
-                        <img className='ProjectCard-image' src={this.image}></img>
+                        <img className='ProjectCard-image' src={this.image} alt={this.title + " Thumbnail"}></img>
                     </div>
                     <div className='ProjectCard-blurb-wrapper'>
                         <p className='ProjectCard-blurb'>
