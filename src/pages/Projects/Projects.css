@@ -1,0 +1,14 @@
+.Projects-main-content {
+    position: relative;
+    align-content: center;
+    align-items: center;
+}
+
+.Projects-projects-table {
+    width: 100%;
+}
+.Projects-projects-tbody tr {
+}
+.Projects-projects-tbody td {
+    padding: 0px;
+}
