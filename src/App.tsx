@@ -7,7 +7,6 @@ import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import { Navigate } from 'react-router-dom';
-import { useLocation } from 'react-router-dom';
 
 function App() {
   return (
