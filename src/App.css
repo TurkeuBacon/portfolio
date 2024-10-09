@@ -1,0 +1,15 @@
+.App {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.App-main-content-wrapper {
+  position: fixed;
+  top: 5vmax;
+  left: 50px;
+  bottom: 0px;
+  right: 0px;
+  padding: 1vmax 1vmax 1vmax 1vmax;
+  overflow-y: scroll;
+}

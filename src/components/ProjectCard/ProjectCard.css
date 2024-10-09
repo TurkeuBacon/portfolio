@@ -1,0 +1,54 @@
+.ProjectCard-wrapper {
+    position: relative;
+    margin: 2vmax;
+    background-color: #186589;
+    border-radius: 2vmax;
+    margin: 1vmax;
+    padding: 1vmax;
+    border: black solid 5px;
+    transition: transform 0.5s;
+    /* transition: border 0.5s; */
+}
+.ProjectCard-wrapper:hover {
+    border: rgb(255, 255, 255) solid 5px;
+    transform: scale(1.075);
+}
+
+.ProjectCard-title {
+    text-align: center;
+    margin: 0px;
+}
+.ProjectCard-wrapper hr {
+    height: 2px;
+    color: #000000;
+    background-color: #000000;
+    border: none;
+}
+.ProjectCard-content-duo {
+    display: flex;
+}
+.ProjectCard-image-wrapper {
+    width: 50%;
+    float:left;
+    align-content: center;
+    padding: .5vmax;
+}
+.ProjectCard-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2vmax;
+    border: black solid 2px
+}
+.ProjectCard-blurb-wrapper {
+    width: 50%;
+    height: 16vmax;
+    float:right;
+    align-content: center;
+    padding: .5vmax;
+    overflow-y: hide;
+}
+.ProjectCard-blurb {
+    font-size: 1.5vmax;
+    margin: 0px;
+}

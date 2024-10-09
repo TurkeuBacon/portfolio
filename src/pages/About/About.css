@@ -1,0 +1,20 @@
+.About-under-construction-wrapper {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    width: 75%;
+    margin-left: 12.5%;
+    margin-top: 12.5%;
+    margin-bottom: 12.5%;
+    align-content: center;
+    padding: 4vmax;
+    background-color: #ee9ef5;
+    border-radius: 3vmax;
+    border: solid 1vmax #aa43ca;
+}
+.About-under-construction-text {
+    text-align: center;
+    font-size: 4vmax;
+    font-weight: bold;
+    margin: 0px;
+}
