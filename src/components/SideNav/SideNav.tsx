@@ -1,8 +1,11 @@
 import React from 'react';
 import './SideNav.css'
 import hamburger from './hamburger.svg'
+import { Link } from 'react-router-dom';
+import withPathName from '../WithPathName';
 
-class SideNav extends React.Component{
+class SideNav extends React.Component {
+
     render(): React.ReactNode {
         return (
             <div className='SideNav-wrapper'>
@@ -10,12 +13,13 @@ class SideNav extends React.Component{
                     <img src={hamburger} className="SideNav-tab-icon" alt="logo" />
                 </div>
                 <div className='SideNav-list'>
-                    <a href="#projects" className="active">Projects</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
+                    <Link to="/projects" className={ (this.props as Record<string, any>).pathName === "/projects" ? "active" : ""}>Projects</Link>
+                    <Link to="/about" className={ (this.props as Record<string, any>).pathName === "/about" ? "active" : ""}>About</Link>
+                    <Link to="/contact" className={ (this.props as Record<string, any>).pathName === "/contact" ? "active" : ""}>Contact</Link>
                 </div>
             </div>
         );
     }
 }
-export default SideNav;
+
+export default withPathName(SideNav);
