@@ -1,10 +1,4 @@
 {
     "projects": [
-        {
-            "title": "permanence_break",
-            "image": "project_thumbnails/PermanenceBreakThumbnail.png",
-            "blurb": "I need to write the Permanence Break blurb.",
-            "page_link": "/projects/permanence_break"
-        }
     ]
 }
