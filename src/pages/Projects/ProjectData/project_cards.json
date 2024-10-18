@@ -1,4 +1,10 @@
 {
     "projects": [
+        {
+            "title": "Permanence Break",
+            "image": "PermanenceBreak.png",
+            "blurb": "Write the Permanence Break Blurb",
+            "link": "/projects/permanence_break"
+        }
     ]
 }
