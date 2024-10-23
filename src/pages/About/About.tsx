@@ -5,6 +5,7 @@ import gabriel_bacon_picture from "./GabrielBaconPicture.jpg";
 interface AboutProps {
 }
 
+// eslint-disable-next-line no-empty-pattern
 function About({}: AboutProps) {
 
     let [aboutText, setAboutText] = useState("Default About Text");

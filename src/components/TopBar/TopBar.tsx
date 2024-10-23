@@ -4,6 +4,7 @@ import './TopBar.css'
 interface TopBarProps {
 }
 
+// eslint-disable-next-line no-empty-pattern
 function TopBar({}: TopBarProps) {
     return (
         <div className="TopBar-wrapper">

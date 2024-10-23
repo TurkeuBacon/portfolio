@@ -4,6 +4,7 @@ import './Contact.css';
 interface ContactProps {
 }
 
+// eslint-disable-next-line no-empty-pattern
 function Contact({}: ContactProps) {
     return (
         <div className="Contact-under-construction-wrapper">

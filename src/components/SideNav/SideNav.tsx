@@ -6,6 +6,7 @@ import { Link, useLocation } from 'react-router-dom';
 interface SideNavProps {
 }
 
+// eslint-disable-next-line no-empty-pattern
 function SideNav({}: SideNavProps) {
     let pathName = useLocation().pathname;
     return (

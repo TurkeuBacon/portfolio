@@ -6,6 +6,7 @@ import projects_json from './ProjectData/project_cards.json'
 interface ProjectsProps {
 }
 
+// eslint-disable-next-line no-empty-pattern
 function Projects({}: ProjectsProps) {
 
     const FORCE_EMPTY: boolean = true;
