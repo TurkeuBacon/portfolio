@@ -5,6 +5,7 @@
     left: 0px;
     position: fixed;
     transition: left .5s;
+    min-height: 650px;
 }
 .SideNav-wrapper:hover {
     left: 250px;

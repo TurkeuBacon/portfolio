@@ -8,6 +8,7 @@
     border-radius: 0px 0px 32px 0px;
     z-index: 1;
     display: flex;
+    min-width: 750px;
 }
 .TopBar-wrapper div {
     float:inline-start
