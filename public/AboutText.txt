@@ -1,0 +1,4 @@
+Hello, I'm Gabriel Bacon, a Game/Software Developer living in Southern California.
+I'm an alumni of UCSC, graduating in 2024 with a B.S in Computer Science: Computer Game Design.
+While I welcome any programming challenge, I'm particularly interested in systemic games and procedural generation.
+I hope to one day teach computer game design, though I'll fit right into any environment that gives me the opportunity to learn and be challenged everyday!
