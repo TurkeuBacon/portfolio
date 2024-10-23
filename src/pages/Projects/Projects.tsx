@@ -9,7 +9,7 @@ interface ProjectsProps {
 // eslint-disable-next-line no-empty-pattern
 function Projects({}: ProjectsProps) {
 
-    const FORCE_EMPTY: boolean = true;
+    const FORCE_EMPTY: boolean = false;
 
     interface ProjectJSONType {
         title: string,
