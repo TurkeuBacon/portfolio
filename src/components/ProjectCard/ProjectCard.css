@@ -1,11 +1,11 @@
 .ProjectCard-wrapper {
     position: relative;
     margin: 2vmax;
-    background-color: #186589;
+    background-color: var(--project_card);
     border-radius: 2vmax;
     margin: 1vmax;
     padding: 1vmax;
-    border: black solid 5px;
+    border: var(--border_dark) solid 5px;
     transition: transform 0.5s;
     /* transition: border 0.5s; */
 }
@@ -16,7 +16,7 @@
     padding: 0px;
 }
 .ProjectCard-wrapper:hover {
-    border: rgb(255, 255, 255) solid 5px;
+    border: var(--border_highlight) solid 5px;
     transform: scale(1.075);
 }
 
@@ -26,8 +26,8 @@
 }
 .ProjectCard-wrapper hr {
     height: 2px;
-    color: #000000;
-    background-color: #000000;
+    color: var(--border_dark);
+    background-color: var(--border_dark);
     border: none;
 }
 .ProjectCard-content-duo {
@@ -44,7 +44,7 @@
     height: auto;
     display: block;
     border-radius: 2vmax;
-    border: black solid 2px
+    border: var(--border_dark) solid 2px
 }
 .ProjectCard-blurb-wrapper {
     width: 50%;

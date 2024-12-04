@@ -8,15 +8,11 @@ interface TopBarProps {
 function TopBar({}: TopBarProps) {
     return (
         <div className="TopBar-wrapper">
-            <div className="TopBar-name-bubble">
-                <div className="TopBar-name-text">
-                    Gabriel Bacon
-                </div>
+            <div className="TopBar-name-wrapper">
+                <p>Gabriel Bacon</p>
             </div>
-            <div className="TopBar-profession-bubble">
-                <div className="TopBar-profession-text">
-                    Game Developer
-                </div>
+            <div className="TopBar-job-wrapper">
+                <p>Game Developer</p>
             </div>
         </div>
     );

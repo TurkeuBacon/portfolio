@@ -3,7 +3,13 @@
         {
             "title": "Permanence Break",
             "image": "PermanenceBreak.png",
-            "blurb": "Write the Permanence Break Blurb",
+            "blurb": "A puzzle game where objects behave differently when you look at them than when you dont. I acted as Producer and Lead Programmer.",
+            "link": "/projects/permanence_break"
+        },
+        {
+            "title": "Automated Playtesting",
+            "image": "AutomatedPlaytestingThumbnail.gif",
+            "blurb": "Write the Automated Playtesting Blurb",
             "link": "/projects/permanence_break"
         }
     ]

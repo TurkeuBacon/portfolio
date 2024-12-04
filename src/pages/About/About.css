@@ -20,36 +20,146 @@
 }
 
 .About-wrapper {
+    --group_padding: 5px;
+
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
-    width: 85%;
-    margin: 1% 7.5% 7.5% 7.5%;
+    width: 100%;
+    height: 100%;
+    padding: 75px 75px 75px 75px;
+    align-content: center;
 }
 
-.About-gabriel-image-wrapper {
-    height: 50vh;
-    width: 50vh;
+.About-group-layout {
+    width: 95%;
+    aspect-ratio: 2.5;
+    display: flex;
     margin: auto;
-    margin-bottom: .5vmax;
+    flex-flow: row;
+    /* background-color: #aa43ca; */
 }
+.About-image-layout {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    height: 100%;
+    flex-grow: 1;
+    aspect-ratio: 1;
+    padding: var(--group_padding);
+}
+.About-text-contact-layout {
+    height: 100%;
+    flex-grow: 1;
+    display: flex;
+    flex-flow: column;
+    float:inline-start
+}
+.About-text-layout {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    width: 100%;
+    height: 60%;
+    padding: var(--group_padding);
+}
+.About-contact-layout {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    width: 100%;
+    height: 40%;
+    padding: var(--group_padding);
+}
+
 .About-gabriel-image {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
     max-width: 100%;
     max-height: 100%;
-    border: #163c4e solid 0.5vmax;
-    border-radius: 2vmax 2vmax 2vmax 2vmax;
+    border: var(--border_light) solid 7px;
+    border-radius: 25px;
     align-content: center;
 }
 
 .About-text-wrapper {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    height: 100%;
     width: 100%;
-    margin: auto;
-    border: #163c4e solid 0.5vmax;
-    border-radius: 2vmax;
-    background-color: #65afd1;
+    border: var(--border_light) solid 7px;
+    border-radius: 25px;
+    background-color: var(--background_light);
+    align-content: center;
+    overflow-y: hidden;
 }
 .About-text {
-    font-size: 1.5vmax;
+    font-size: calc(5px + 1.3vw);
     margin: 2.5%;
-    /* white-space: pre-line; */
+    min-width: 400px;
+}
+
+.About-contact-wrapper {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    height: 100%;
+    width: 100%;
+    border: var(--border_light) solid 7px;
+    border-radius: 25px;
+    background-color: var(--background_dark);
+    display: flex;
+    flex-flow: column;
+}
+.About-contact-wrapper h1 {
+    font-size: 2vw;
+    font-weight: 700;
+    width: fit-content;
+    margin: auto;
+}
+.About-contact-wrapper hr {
+    height: 2px;
+    color: var(--border_dark);
+    background-color: var(--border_dark);
+    border: none;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.About-contact-links {
+    width: fit-content;
+    height: 50%;
+    margin: auto;
+    padding: 5px;
+    align-content: center;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+.About-contact-link-wrapper {
+    float: inline-start;
+    height: 90%;
+    align-content: center;
+    margin: 0px 20px 0px 20px;
+    /* background-color: aquamarine; */
+}
+.About-contact-link-header {
+    font-size: 1.75vw;
+    font-weight: 550;
+    margin: auto;
+    width: fit-content;
+}
+.About-contact-link {
+    font-size: 1.25vw;
+}
+.About-contact-link-icon-wrapper {
+    float: inline-start;
+    height: 80%;
+    aspect-ratio: 1;
+    margin: 0px 20px 0px 20px;
+    /* background-color: #aa43ca; */
+}
+.About-contact-link-icon {
+    max-width: 100%;
+    max-height: 100%;
 }
