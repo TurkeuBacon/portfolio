@@ -1,0 +1,23 @@
+.PermanenceBreak-wrapper {
+    width: 95%;
+    margin: auto;
+    margin-top: 1vmax;
+    border: #163c4e solid 0.5vmax;
+    border-radius: 2vmax;
+    background-color: #65afd1;
+}
+
+.PermanenceBreak-title-wrapper {
+    width: 40%;
+    margin: 2vmax;
+}
+.PermanenceBreak-title-image {
+    width: 100%;
+    /* align-content: center; */
+}
+
+.PermanenceBreak-description-A {
+    margin-left: 3vmax;
+    margin-right: 3vmax;
+    font-size: 2vmax;
+}

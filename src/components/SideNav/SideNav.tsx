@@ -1,25 +1,32 @@
 import React from 'react';
 import './SideNav.css'
 import hamburger from './hamburger.svg'
-import { Link } from 'react-router-dom';
-import withPathName from '../WithPathName';
+import { Link, useLocation } from 'react-router-dom';
 
-class SideNav extends React.Component {
-
-    render(): React.ReactNode {
-        return (
-            <div className='SideNav-wrapper'>
-                <div className='SideNav-tab'>
-                    <img src={hamburger} className="SideNav-tab-icon" alt="logo" />
-                </div>
-                <div className='SideNav-list'>
-                    <Link to="/projects" className={ (this.props as Record<string, any>).pathName === "/projects" ? "active" : ""}>Projects</Link>
-                    <Link to="/about" className={ (this.props as Record<string, any>).pathName === "/about" ? "active" : ""}>About</Link>
-                    <Link to="/contact" className={ (this.props as Record<string, any>).pathName === "/contact" ? "active" : ""}>Contact</Link>
-                </div>
-            </div>
-        );
-    }
+interface SideNavProps {
 }
 
-export default withPathName(SideNav);
+// eslint-disable-next-line no-empty-pattern
+function SideNav({}: SideNavProps) {
+    let pathName = useLocation().pathname;
+    return (
+        <div className='SideNav-wrapper'>
+            <div className='SideNav-tab'>
+                <div className='SideNav-tab-swoop'>
+                    <div></div>
+                </div>
+                <img src={hamburger} className="SideNav-tab-icon" alt="logo" />
+            </div>
+            <div className='SideNav-list'>
+                <Link to="/projects" className={ pathName === "/projects" ? "active" : ""}>Projects</Link>
+                <Link to="/about" className={ pathName === "/about" ? "active" : ""}>About</Link>
+                {/* <Link to="/contact" className={ pathName === "/contact" ? "active" : ""}>Contact</Link> */}
+                <div className='SideNav-list-swoop'>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    );
+}
+
+export default SideNav;

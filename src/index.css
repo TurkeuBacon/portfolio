@@ -1,4 +1,17 @@
 body {
+  --primary_light: #7d97b9;
+  --secondary_light: #4e6180;
+  --border_light: rgb(38, 51, 69);
+  --border_dark: #000000;
+  --border_highlight: hwb(0 100% 0%);
+  --background_light: #7aa9e7;
+  --background_dark: #6d8eb9;
+  --project_card: #5986ce;
+
+  --min_width: 1024px;
+  --min_height: 650px;
+  --topbar_height: 100px;
+
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
