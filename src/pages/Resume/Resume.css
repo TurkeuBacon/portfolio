@@ -1,0 +1,54 @@
+.Resume-wrapper {
+    --group_padding: 5px;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+    width: 100%;
+    height: 100%;
+    padding: 25px 75px 75px 75px;
+    align-content: center;
+}
+
+.Resume-image-wrapper {
+	width: 50%;
+    margin: auto;
+}
+
+.Resume-image-wrapper img {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	max-width: 100%;
+	max-height: 100%;
+	margin-bottom: 75px;
+	border-radius: 25px;
+	border: var(--border_dark) solid 5px;
+}
+
+.Resume-download-wrapper {
+	position: sticky;
+	top: 25px;
+	width: fit-content;
+	height: fit-content;
+	margin: auto;
+	margin-bottom: 25px;
+}
+.Resume-download-button {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
+	background-color: var(--background_dark);
+	font-size: x-large;
+	padding: 15px;
+	border-radius: 100px;
+    text-decoration: none;
+    color: #000000;
+	border: var(--border_light) solid 5px;
+}
+.Resume-download-button:hover {
+	background-color: var(--background_light);
+}
+.Resume-download-button:active {
+    color: #ffffff;
+	border-color: var(--border_highlight);
+}

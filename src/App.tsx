@@ -7,6 +7,7 @@ import Projects from './pages/Projects/Projects';
 import About from './pages/About/About';
 import { Navigate } from 'react-router-dom';
 import PermanenceBreakPage from './pages/Projects/PermanenceBreak/PermanenceBreakPage';
+import Resume from './pages/Resume/Resume';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
             <Route path="/" element={<Navigate to="/projects"/>} />
             <Route path='/projects' Component={Projects}/>
             <Route path='/about' Component={About}/>
+            <Route path='/resume' Component={Resume}/>
             <Route path='/projects/permanence_break' Component={PermanenceBreakPage}/>
           </Routes>
         </div>

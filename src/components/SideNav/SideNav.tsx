@@ -20,7 +20,7 @@ function SideNav({}: SideNavProps) {
             <div className='SideNav-list'>
                 <Link to="/projects" className={ pathName === "/projects" ? "active" : ""}>Projects</Link>
                 <Link to="/about" className={ pathName === "/about" ? "active" : ""}>About</Link>
-                {/* <Link to="/contact" className={ pathName === "/contact" ? "active" : ""}>Contact</Link> */}
+                <Link to="/resume" className={ pathName === "/resume" ? "active" : ""}>Resume</Link>
                 <div className='SideNav-list-swoop'>
                     <div></div>
                 </div>
