@@ -1,0 +1,3 @@
+Permanence Break is a first-person puzzle platformer which revolves around objects who's behavior changes depending on if they are being observed.
+It was developed using the Unity Game Engine over the course of six months for the Computer Game Design capstone series at UCSC, by myself and four other student developers.
+Amongst team managment, my main contributions to the project include core gameplay programming, concepting, and level design.
