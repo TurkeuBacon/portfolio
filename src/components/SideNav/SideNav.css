@@ -20,6 +20,7 @@
     z-index: inherit;
     position: absolute;
     background-color: var(--secondary_light);
+    align-content: center;
 }
 .SideNav-tab-swoop {
     width: 100%;

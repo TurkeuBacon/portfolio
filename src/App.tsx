@@ -26,6 +26,7 @@ function App() {
             <Route path='/writing_sample' Component={WritingSample}/>
             <Route path='/projects/permanence_break' Component={PermanenceBreakPage}/>
             <Route path='/projects/automated_playtesting' Component={AutomatedPlaytestingPage}/>
+            <Route path='/projects/permanence_break' Component={PermanenceBreakPage}/>
           </Routes>
         </div>
       </div>
