@@ -3,14 +3,14 @@
         {
             "title": "Permanence Break",
             "image": "PermanenceBreak.png",
-            "blurb": "A puzzle game where objects behave differently when you look at them than when you dont. I acted as Producer and Lead Programmer.",
+            "blurb": "A puzzle game where objects behave differently depending on if they are being observed. I served as Producer and Lead Programmer.",
             "link": "/projects/permanence_break"
         },
         {
             "title": "Automated Playtesting",
             "image": "AutomatedPlaytestingThumbnail.gif",
-            "blurb": "Write the Automated Playtesting Blurb",
-            "link": "/projects/permanence_break"
+            "blurb": "An project researching automated playtesting of micro-games made using crip-game-lib. I served as the primary programmer under a PhD Student as part of an independent study.",
+            "link": "/projects/automated_playtesting"
         }
     ]
 }

@@ -1,11 +1,20 @@
 import './PermanenceBreakPage.css';
 import permanence_break_logo from './PermanenceBreakLogo.png'
+import permanence_break_header_demo from './PermanenceBreakHeaderDemo.gif'
+import permanence_break_custom_render_demo from './PermanenceBreakCustomRenderPassDemo.gif'
+import permanence_break_render_pass_chart from './PermanenceBreakCustomRenderPassChart.png'
 import { useEffect, useState } from 'react';
 
 function PermanenceBreakPage() {
 
-    const descriptionKeys = ['A', 'B'];
-    let [descriptions, setDescriptions] = useState<string[]>([...descriptionKeys]);
+    const textFiles = [
+        'roles',
+        'overview',
+        'customRenderPass',
+        'renderPassDemo',
+        'renderPassChart'
+    ];
+    let [textContents, setTextContents] = useState<string[]>([...textFiles]);
 
     useEffect(() => {
         fetchDescription();
@@ -13,27 +22,54 @@ function PermanenceBreakPage() {
 
     return (
         <div className="PermanenceBreak-wrapper">
-            <div className='PermanenceBreak-title-wrapper'>
-                <img className='PermanenceBreak-title-image' src={permanence_break_logo} alt='Permanence Break'/>
+            <table className='PermanenceBreak-header-wrapper'>
+                <tr>
+                    <td className='PermanenceBreak-title-wrapper'>
+                        <img className='PermanenceBreak-title-image' src={permanence_break_logo} alt='Permanence Break'/>
+                    </td>
+                    <td className='PermanenceBreak-demo-wrapper'>
+                        <img className='PermanenceBreak-header-demo' src={permanence_break_header_demo} alt="Permanence Break Demo"></img>
+                    </td>
+                </tr>
+            </table>
+            <div className='PermanenceBreak-roles-wrapper'>
+                {textContents[0]}
             </div>
-            <p className='PermanenceBreak-description-A'>
-                {descriptions[0]}
+            <a href='https://store.steampowered.com/app/2928200/Permanence_Break/' className='PermanenceBreak-steam-link'>View on Steam!</a>
+            <p className='PermanenceBreak-overview-wrapper'>
+                {textContents[1]}
             </p>
-            <p className='PermanenceBreak-description-A'>
-                {descriptions[1]}
+            <p className='PermanenceBreak-customRenderPass-wrapper'>
+                {textContents[2]}
             </p>
+            <table className='PermanenceBreak-image-text-pair'>
+                <tr>
+                    <td className='PermanenceBreak-image-text-pair-image'>
+                        <img className='PermanenceBreak-table-image-end' src={permanence_break_custom_render_demo} alt='Permanence Break Render Pass Texture Demo'/>
+                    </td>
+                    <td className='PermanenceBreak-image-text-pair-text'>
+                        <p className='PermanenceBreak-customRenderPassDemo-wrapper'>
+                            {textContents[3]}
+                        </p>
+                    </td>
+                </tr>
+            </table>
+            <p className='PermanenceBreak-customRenderPass-wrapper'>
+                {textContents[4]}
+            </p>
+            <img className='PermanenceBreak-render-pass-chart' src={permanence_break_render_pass_chart} alt="Permanence Break Render Pass Chart"></img>
         </div>
     );
 
-    function fetchDescription(i: number = 0, temp_descs: string[] = []) {
-        const descKey = descriptionKeys[i];
-        fetch("/project_data/permanence_break/description" + descKey + ".txt").then((response) => {
+    function fetchDescription(i: number = 0, temp_contents: string[] = []) {
+        const textFile = textFiles[i];
+        fetch("/project_data/permanence_break/prmbrk_" + textFile + ".txt").then((response) => {
             response.text().then((data) => {
-                temp_descs.push(data);
-                if(i+1 < descriptionKeys.length) {
-                    fetchDescription(i+1, temp_descs);
+                temp_contents.push(data);
+                if(i+1 < textFiles.length) {
+                    fetchDescription(i+1, temp_contents);
                 } else {
-                    setDescriptions(temp_descs);
+                    setTextContents(temp_contents);
                 }
             });
         });

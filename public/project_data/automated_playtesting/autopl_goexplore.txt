@@ -1,0 +1,7 @@
+, though there were still many challanges along the way. Go-Explore rapidly makes random moves for a set number of frames, after which it saves the state of the game and jumps to a random previously saved state.
+This approach relies on the game being sped up considerable, requiring me to monkey patch the tick rate of crisp-game-lib.
+Other monkey patches were made to override control of the game, allowing moves to be made through code and preventing the user from accidentally affecting the playtest.
+As it explores the game the program keeps track of what moves it made to arrive at its current state, so that when the exploration ends it can replay those moves in real time.
+Currently the only replayable states are whichever ones lead to the highest score, but we plan to add support for other parameters in the future.
+By editing the source code of the project the random input parameters can be adjusted to switch between short/long pressed and short/long delays between presses.
+This was taken into consideration to try and accomodate games with different playstyles.

@@ -1,0 +1,3 @@
+A research project I took part in as part of an independent study while at UCSC.
+This javascript program rapidly playtests games made using crisp-game-lib using the Go-Explore algorithm.
+The playthrough with the highest score can then be replayed.
