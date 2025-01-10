@@ -35,6 +35,7 @@ function PermanenceBreakPage() {
             <div className='PermanenceBreak-roles-wrapper'>
                 {textContents[0]}
             </div>
+            <a href='https://store.steampowered.com/app/2928200/Permanence_Break/' className='PermanenceBreak-steam-link'>View on Steam!</a>
             <p className='PermanenceBreak-overview-wrapper'>
                 {textContents[1]}
             </p>

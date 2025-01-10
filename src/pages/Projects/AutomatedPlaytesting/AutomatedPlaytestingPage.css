@@ -1,0 +1,35 @@
+.AutomatedPlaytesting-wrapper {
+    width: 95%;
+    margin: auto;
+    margin-top: 1vmax;
+    border: #163c4e solid 0.5vmax;
+    border-radius: 2vmax;
+    background-color: #65afd1;
+}
+
+.AutomatedPlaytesting-header-wrapper {
+    width: 100%;
+    height: 10vh;
+    padding: 1vmax 3vmax 1vmax 3vmax;
+}
+.AutomatedPlaytesting-title {
+    font-size: 4vmax;
+    font-weight: bold;
+}
+
+.AutomatedPlaytesting-roles-wrapper {
+    margin-left: 3vmax;
+    margin-right: 3vmax;
+    font-size: 3vmax;
+    font-weight: bold;
+}
+.AutomatedPlaytesting-try-it-link {
+    margin-left: 3vmax;
+    margin-right: 3vmax;
+    font-size: calc(5px + 1.3vw);
+}
+.AutomatedPlaytesting-overview-wrapper {
+    margin-left: 3vmax;
+    margin-right: 3vmax;
+    font-size: calc(5px + 1.3vw);
+}

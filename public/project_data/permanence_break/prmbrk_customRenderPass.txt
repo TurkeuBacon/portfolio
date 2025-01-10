@@ -1,3 +1,3 @@
-By far my largest contribution to the project was implementing the object permanence mechanic. In order to detect which object were on screen at any time, I created a custom render pass in Unity's Scriptable Render Pipeline.
-This render pass draws all objects with special permanence rules as a single unique value in the R channel of a texture. This texture is then checked on the GPU using a compute shader that returns a list of all visible objects
+By far my largest contribution to the project was implementing the object permanence mechanic. In order to detect which objects are on screen at any time, I created a custom render pass in Unity's Scriptable Render Pipeline.
+This render pass draws all objects with special permanence rules as a single unique shade of red. This texture is then checked on the GPU using a compute shader. The shader returns a list of all visible objects
 based on which colors it found in the texture.

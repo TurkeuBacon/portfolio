@@ -45,6 +45,11 @@
     font-size: 3vmax;
     font-weight: bold;
 }
+.PermanenceBreak-steam-link {
+    margin-left: 3vmax;
+    margin-right: 3vmax;
+    font-size: calc(5px + 1.3vw);
+}
 .PermanenceBreak-overview-wrapper {
     margin-left: 3vmax;
     margin-right: 3vmax;
