@@ -13,6 +13,7 @@
 .SideNav-tab {
     width: 50px;
     height: 100%;
+    padding: 50px 0px 0px 0px;
     border-radius: 0px 0px 40px 0px;
     padding: 50px 0px 0px 0px;
     top: 0px;
@@ -20,7 +21,6 @@
     z-index: inherit;
     position: absolute;
     background-color: var(--secondary_light);
-    align-content: center;
 }
 .SideNav-tab-swoop {
     width: 100%;
