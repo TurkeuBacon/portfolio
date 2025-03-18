@@ -1,36 +1,70 @@
-.TopBar-wrapper {
-    width: 100%;
-    height: var(--topbar_height);
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    background-color: var(--primary_light);
-    border-radius: 0px 0px 0px 0px;
-    z-index: 1;
-    display: flex;
-    min-width: var(--min_width);
-}
-.TopBar-wrapper div {
-    float:inline-start
-}
+@media only screen and (max-width: 600px) {
+    .TopBar-wrapper {
+        width: 100%;
+        height: fit-content;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        padding: 1vi 0vi 1vi 0vi;
+        background-color: var(--primary_light);
+        z-index: 1;
+    }
+    .TopBar-wrapper div {
+    }
 
-.TopBar-name-wrapper {
-    align-content: center;
-}
-.TopBar-name-wrapper p{
-    margin: 0px 0px 0px 75px;
-    font-size: calc(var(--topbar_height) * 8 / 10);
-    font-weight: 500;
-}
+    .TopBar-name-wrapper {
+        align-content: center;
+    }
+    .TopBar-name-wrapper p{
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+        font-size: 12vi;
+        font-weight: 500;
+    }
 
-.TopBar-job-wrapper {
-    align-content: center;
+    .TopBar-job-wrapper {
+        align-content: center;
+    }
+    .TopBar-job-wrapper p{
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+        font-size: 8vi;
+    }
 }
-.TopBar-job-wrapper p{
-    margin: 0px 0px 0px 75px;
-    font-size: calc(var(--topbar_height) * 5 / 10);
-}
+@media only screen and (min-width: 600px) {
+    .TopBar-wrapper {
+        width: 100%;
+        height: var(--topbar_height);
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: var(--primary_light);
+        border-radius: 0px 0px 0px 0px;
+        z-index: 1;
+        display: flex;
+        min-width: var(--min_width);
+    }
+    .TopBar-wrapper div {
+        float:inline-start
+    }
 
+    .TopBar-name-wrapper {
+        align-content: center;
+    }
+    .TopBar-name-wrapper p{
+        margin: 0px 0px 0px 75px;
+        font-size: calc(var(--topbar_height) * 8 / 10);
+        font-weight: 500;
+    }
+
+    .TopBar-job-wrapper {
+        align-content: center;
+    }
+    .TopBar-job-wrapper p{
+        margin: 0px 0px 0px 75px;
+        font-size: calc(var(--topbar_height) * 5 / 10);
+    }
+}
 
 
 
